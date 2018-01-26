@@ -4,7 +4,9 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     sass = require('gulp-sass'),
     minifyHTML = require('gulp-minify-html'),
+    uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
+    
     
 var env,
     jsSources,
@@ -14,8 +16,8 @@ var env,
     outputDir,
     sassStyle;
     
-env = process.env.NODE_ENV || 'development';
-
+//env = process.env.NODE_ENV || 'development';
+env = 'production';
 if (env==='development') {
   outputDir = 'builds/development/';
   sassStyle = 'expanded';
@@ -38,7 +40,7 @@ gulp.task('log',function(){
 gulp.task('js', function() {
   gulp.src(jsSources)
     .pipe(concat('script.js'))
-    //.pipe(gulpif(env === 'production', uglify()))
+    .pipe(gulpif(env === 'production', uglify()))
     .pipe(gulp.dest(outputDir + 'js'))
     //.pipe(connect.reload())
 });
