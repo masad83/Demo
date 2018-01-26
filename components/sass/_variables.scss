@@ -1,0 +1,25 @@
+// _variables.scss
+// =================
+
+ 
+$jazzberry     : rgba(162, 31, 97, 1);
+$deepPink      : rgba(234, 48, 50, 1);
+$whiteSmoke    : rgba(246, 246, 246, 1);
+$darkGray      : rgba(111, 111, 111, 1);
+$lighterGray   : rgba(74, 74, 74, 1);
+$mainContainer : #f6f6f6;
+
+
+ 
+$mainfont  : "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+//$mainfont  : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+//$titlefont : "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+//$menufont  : "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+
+//Break Points
+$bpSmallPc : 1200px;
+$bpTablet  : 990px;
+$bpMobile  : 768px;
+$bpSmallMobile  : 480px;
+

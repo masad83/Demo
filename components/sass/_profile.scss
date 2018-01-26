@@ -1,0 +1,167 @@
+//***********************************************
+// Profile Page
+//***********************************************
+.info-right-side {
+    position: fixed;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 127px;
+    z-index: -1;
+}
+
+.info-right-side-inner{
+    float: right;
+    height: 100%;
+}
+
+.info-right-side-inner-bg{
+    background: url("../images/bg-2x.png") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+.info-left-side{
+    padding: 85px 65px 0 15px;
+
+    & .info-title{   
+        max-width: 320px;
+        font-size: 45px;
+        margin-bottom: 30px;
+        color: $lighterGray;
+    }
+    
+    & .info-sub-title{
+        font-size: 20px;
+        color: $lighterGray;
+        margin-bottom: 25px;
+    }
+    & .info-description{
+        font-size: 16px;
+        color: $darkGray;
+        margin-bottom: 55px;
+    }
+
+}
+
+.sub-info{
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: $darkGray;
+}  
+
+.sub-info-item{
+    width:20%;
+    text-align: center;
+
+    & .sub-inf-img{
+        width: 28px;
+        margin: 0 auto 10px;
+        transition: All .3s;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    & .sub-inf-subtitle{
+        font-size: 12px;
+    }
+}
+
+
+.location-info{
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    padding-bottom: 25px;
+    margin-bottom: 55px;
+
+
+}
+
+
+.form-submit{
+    text-align: center;
+    margin-bottom: 150px;
+    width: 100%;
+
+    & .btn{
+        width:100%;
+        max-width: 290px;
+        padding: 20px;
+        margin: 0 auto;    
+        background: linear-gradient(to right,$deepPink,$jazzberry );
+        color: #FFF;
+        box-shadow: 0px 1px 10px RGBA(0,0,0,.5);
+        font-size: 16px;
+        outline: none;
+        &:hover{
+            transform: translateY(-10px)
+        }
+    }
+
+}
+
+.location-Title{
+    font-size: 20px;
+    color: $darkGray;
+    margin-bottom: 20px;
+}
+
+.maps-wraper {
+    position: relative;
+}
+
+.maps {
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: #ccc;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.location-text{
+    font-size: 16px;
+    color: $darkGray;
+}
+
+
+
+.profile-social-icons{
+    position: fixed;
+    top: 35px;
+    right: 60px;
+    & .instagram{
+        opacity: .3;
+    }
+}
+
+@media screen and (max-width:$bpTablet){
+    .profile-social-icons{
+        position: fixed;
+        top: 85px;
+        right: 60px;
+
+    }
+}
+
+@media screen and (max-width:$bpMobile){
+    .info-left-side{
+        padding: 85px 0px 0 5px;
+    }
+
+}
+
+@media screen and (max-width:$bpSmallMobile){
+    .info-left-side{
+        padding: 85px 0px 0 5px;
+    }
+    .info-right-side,  .profile-social-icons{
+        display: none;
+    }
+
+}
